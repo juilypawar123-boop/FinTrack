@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction | FinTrack</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <header class="top-nav">
+        <h2 class="logo">FinTrack</h2>
+        <nav>
+            <a class="active" href="index.html">Dashboard</a>
+            <a href="add-transaction.html">Add Transaction</a>
+            <a href="history.html">History</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Add Transaction</h1>
+
+        <!-- Transaction Form -->
+        <form id="transactionForm">
+            <div class="form-group">
+                <input type="number" id="amount" placeholder=" " required>
+                <label for="amount">Amount (€)</label>
+            </div>
+
+            <div class="form-group">
+                <select id="category" required>
+                    <option value="" disabled selected hidden></option>
+                    <option>Food</option>
+                    <option>Rent</option>
+                    <option>Salary</option>
+                    <option>Entertainment</option>
+                    <option>Other</option>
+                </select>
+                <label for="category">Category</label>
+            </div>
+
+            <div class="form-group">
+                <select id="type" required>
+                    <option value="" disabled selected hidden></option>
+                    <option>Income</option>
+                    <option>Expense</option>
+                </select>
+                <label for="type">Type</label>
+            </div>
+
+            <div class="form-group">
+                <input type="date" id="date" required>
+                <label for="date">Date</label>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="note" placeholder=" ">
+                <label for="note">Optional Note</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Add Transaction</button>
+        </form>
+
+        <!-- Dashboard Section: Chart and Recent Transactions -->
+        <div class="dashboard">
+            <div class="chart-container">
+                <canvas id="transactionChart"></canvas>
+            </div>
+            <div class="transactions-container">
+                <h3>Recent Transactions</h3>
+                <ul class="transactions" id="transactionList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared JS -->
+    <script src="js/app.js"></script>
+    <script src="js/add-transaction.js"></script> <!-- page-specific logic -->
+</body>
+</html>
