@@ -11,6 +11,13 @@ Watch live demo on Netlify : https://fintrack201.netlify.app
 -----
 
 ## **Features**
+ 
+1.	Full-stack CRUD
+2.	Responsive UI
+3.	Basic Charts / Analytics
+4.	Data persistence
+5.	Validation & Error Handling
+
 - Add new income and expense transactions.
 - Interactive pie charts showing income vs. expenses.
 - Dashboard with total income, total expenses, and balance.
