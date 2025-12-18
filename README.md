@@ -13,12 +13,19 @@ Watch live demo on Netlify : https://fintrack201.netlify.app
 ## **Features**
  
 ✔ Full-stack CRUD
+
 ✔ Responsive UI
+
 ✔ Interactive Charts / Analytics
+
 ✔ Data persistence
+
 ✔ Validation & Error Handling
+
 ✔ Add new income and expense transactions
+
 ✔ CSV Export
+
 ✔ Uses **localStorage** for persistent client-side storage
 
 ---
