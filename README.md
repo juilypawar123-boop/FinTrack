@@ -6,7 +6,7 @@ A modern, interactive **Personal Finance Tracker Web Application** built with **
 
 ## **Live Demo** ##
 
-Watch live demo on Netlify : fintrack201.netlify.app
+Watch live demo on Netlify : https://fintrack201.netlify.app
 
 -----
 
